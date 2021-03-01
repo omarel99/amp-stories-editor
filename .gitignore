@@ -1,0 +1,23 @@
+*.serialize
+*.bak
+*.bk
+*.old
+.svn
+node_modules/
+vendor/
+
+# OS junk files
+[Tt]humbs.db
+*.DS_Store
+*.swp
+
+# IDE junk files
+.project
+.buildpath
+.settings
+.idea
+
+
+
+/html/css/
+/html/_common/javascript/webedia/main.js*

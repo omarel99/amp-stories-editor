@@ -1,0 +1,103 @@
+.b-ui{
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1440px;
+    width: 100%;
+    overflow:hidden;
+    &__inner{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &__topbar{
+        height: 64px;
+        background-color: #151a26;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px #5628ee;
+
+        & .left-menu{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
+        & .right-menu{
+            margin-right: 5.6rem;
+            & .preview{
+                background: transparent;
+                color: white;
+                @include font-size(16,16);
+                font-family: $ff-main-medium;
+                border:0;
+                outline:0;
+                display: flex;
+                align-items: center;
+                flex-flow: row nowrap;
+
+                &:hover{
+                    @include breakpoint(desktop){
+                        opacity: 0.6;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            & .icon{
+                display: inline-block;
+                margin-left: 1.5rem;
+                width: 2rem;
+                & svg{
+                    fill:white;
+                }
+            }
+        }
+
+         & .logo{
+             width: 2.4rem;
+             margin: 0 2.4rem;
+             & svg{
+                 fill:#5628ee;
+             }
+         }
+    }
+    &__sidebar{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 30%;
+        background: #1b212f;
+    }
+
+    &__main{
+        width: 70%;
+        background: #0c0f17;
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        &__inner{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 7.2rem;
+        padding-top: 4rem;
+        background:#151a26;
+        position: relative;
+        z-index: 2;
+    }
+}

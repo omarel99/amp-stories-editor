@@ -1,0 +1,79 @@
+//----- Variables / Typography
+
+//------FONT-FACE
+$font-path:'../fonts';
+ @font-face {
+	font-family: 'RobotoRegular';
+	src: url('#{$font-path}/RobotoRegular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+ @font-face {
+	font-family: 'RobotoMedium';
+	src: url('#{$font-path}/RobotoMedium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+ @font-face {
+	font-family: 'NBRegular';
+	src: url('#{$font-path}/NBIntRegular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+ @font-face {
+	font-family: 'NBBold';
+	src: url('#{$font-path}/NBIntBold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+//------FONT FAMILY VARIBALE
+$fontDefault              : Arial, sans-serif;
+
+// Examples
+// $ff == $font-family
+$ff-main-regular          : 'RobotoRegular';
+$ff-main-medium           : 'RobotoMedium';
+$ff-sec-regular           : 'NBRegular';
+$ff-sec-bold              : 'NBBold';
+
+//----- Font size
+$font-size-base           : 10;
+
+//------GLOBAL FONT SETTINGS
+html {
+  @include font-size-vw($font-size-base, $font-size-base);
+}
+body {
+    font-family: $ff-main-regular;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+
+	&.fixed {
+		position: relative;
+		overflow: auto !important;
+		height: 100%;
+		max-height: 100%;
+
+		@include breakpoint(overPhone) {
+			overflow: hidden !important;
+		}
+	}
+}
+
+h1 {
+
+}
+h2 {}
+a {
+    text-decoration: none;
+}
+p {}

@@ -1,0 +1,48 @@
+.c-ui-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.2rem;
+    background: transparent;
+    transition: all 0.3s ease;
+
+    &__inner{
+        width: 2.4rem;
+    }
+
+    & .svg{
+        fill:#2f3545;
+        transition: all 0.25s ease;
+    }
+
+    &:hover{
+        @include breakpoint(overPhone){
+            cursor: pointer;
+            .svg{
+                fill:white;
+            }
+        }
+    }
+
+    &.selected{
+
+        & .svg{
+            fill:white;
+            transition: all 0.25s ease;
+        }
+
+        &:hover{
+            @include breakpoint(overPhone){
+                cursor: pointer;
+                .svg{
+                    fill:rgba(255,255,255,0.5);
+                }
+            }
+        }
+    }
+
+    &--last{
+        margin-bottom:0;
+    }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AMP GUI</title>
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+</head>
+<body>
+<div class="b-ui">
+    <div class="b-ui__topbar">
+        <div class="left-menu">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21.41">
+                    <g id="logo" transform="translate(0 -26.238)">
+                        <path id="Path_6" d="M0 333.442a.892.892 0 0 0 .663.825l9.044 2.4a2.566 2.566 0 0 0 1.488-.054l12.2-4.2a.893.893 0 0 0-.095-1.713l-1.557-.349-10.022 3.448a4.176 4.176 0 0 1-2.43.088l-7.124-1.888-1.578.569a.893.893 0 0 0-.589.874z" class="cls-1" data-name="Path 6" transform="translate(0 -289.1)"/>
+                        <path id="Path_7" d="M0 245.4a.893.893 0 0 0 .664.825l9.043 2.4a2.556 2.556 0 0 0 1.488-.054l12.2-4.2a.893.893 0 0 0-.095-1.716l-1.557-.349-10.022 3.448a4.186 4.186 0 0 1-2.43.088l-7.124-1.888-1.577.566a.893.893 0 0 0-.59.88z" class="cls-1" data-name="Path 7" transform="translate(0 -205.402)"/>
+                        <path id="Path_8" d="M11.723 157.709a4.184 4.184 0 0 1-2.43.088l-7.125-1.887-1.578.569a.893.893 0 0 0 .074 1.7l9.043 2.4a2.566 2.566 0 0 0 1.488-.054l12.2-4.2a.893.893 0 0 0-.095-1.716l-1.557-.349z" class="cls-1" data-name="Path 8" transform="translate(0 -121.705)"/>
+                        <path id="Path_9" d="M.664 32.132l9.044 2.4a2.566 2.566 0 0 0 1.488-.054l12.2-4.2a.893.893 0 0 0-.096-1.718L13.227 26.3a2.563 2.563 0 0 0-1.428.089L.59 30.428a.893.893 0 0 0 .074 1.7z" class="cls-1" data-name="Path 9"/>
+                    </g>
+                </svg>
+            </div>
+            <button class='c-btn c-btn--tab selected'>story</button>
+            <button class='c-btn c-btn--tab c-btn--disabled'>reporting</button>
+        </div>
+        <div class="right-menu">
+            <button class="preview">
+                Preview
+                <span class='icon'>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <g id="publish">
+                            <g id="Group_29" data-name="Group 29" transform="translate(5.818)">
+                                <g id="Group_28" data-name="Group 28">
+                                    <path id="Path_13" d="M195.637 0h-5.818a.727.727 0 1 0 0 1.455h4.062L186.4 8.94a.727.727 0 1 0 1.028 1.028l7.486-7.486v4.063a.727.727 0 0 0 1.455 0V.727a.727.727 0 0 0-.732-.727z" class="cls-1" data-name="Path 13" transform="translate(-186.182)"/>
+                                </g>
+                            </g>
+                            <g id="Group_31" data-name="Group 31" transform="translate(0 2.909)">
+                                <g id="Group_30" data-name="Group 30">
+                                    <path id="Path_14" d="M12.364 97.455a.727.727 0 0 0-.727.727v6.545H1.455V94.546H8a.727.727 0 1 0 0-1.455H.727a.727.727 0 0 0-.727.727v11.636a.727.727 0 0 0 .727.727h11.637a.727.727 0 0 0 .727-.727v-7.272a.727.727 0 0 0-.727-.727z" class="cls-1" data-name="Path 14" transform="translate(0 -93.091)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="b-ui__inner">
+        <div class="b-ui__sidebar">
+            <div class="b-ui__menu">
+                <div class="c-ui-btn c-ui-btn--edit-general selected" data-toolclass="edit-general" >
+                    <div class="c-ui-btn__inner">
+                        <svg class='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24.001">
+                            <g id="global-settings" transform="translate(-.003)">
+                                <g id="Group_82" data-name="Group 82" transform="translate(.003)">
+                                    <path id="Path_32" d="M23.928 10.668a.781.781 0 0 0-.771-.591 2.65 2.65 0 0 1-1.814-4.612.666.666 0 0 0 .073-.9 11.875 11.875 0 0 0-1.9-1.92.668.668 0 0 0-.912.074 2.766 2.766 0 0 1-2.993.672 2.666 2.666 0 0 1-1.623-2.61A.666.666 0 0 0 13.4.08a11.981 11.981 0 0 0-2.7-.007.668.668 0 0 0-.594.687 2.67 2.67 0 0 1-1.644 2.56 2.773 2.773 0 0 1-2.971-.676.669.669 0 0 0-.906-.076 11.92 11.92 0 0 0-1.94 1.919.668.668 0 0 0 .072.912 2.659 2.659 0 0 1 .671 2.994 2.774 2.774 0 0 1-2.612 1.622.652.652 0 0 0-.693.589 12.021 12.021 0 0 0-.005 2.729.794.794 0 0 0 .787.59 2.632 2.632 0 0 1 2.469 1.644 2.668 2.668 0 0 1-.671 2.967.667.667 0 0 0-.073.9 11.918 11.918 0 0 0 1.9 1.921.667.667 0 0 0 .913-.072 2.762 2.762 0 0 1 2.992-.673 2.661 2.661 0 0 1 1.624 2.6.667.667 0 0 0 .589.7 11.944 11.944 0 0 0 2.7.007.668.668 0 0 0 .594-.687 2.667 2.667 0 0 1 1.642-2.559 2.769 2.769 0 0 1 2.972.676.671.671 0 0 0 .906.076 11.947 11.947 0 0 0 1.941-1.919.666.666 0 0 0-.072-.912 2.659 2.659 0 0 1-.672-2.994 2.687 2.687 0 0 1 2.455-1.627h.148a.668.668 0 0 0 .7-.588 12.011 12.011 0 0 0 .006-2.715zm-11.906 5.361a4 4 0 1 1 4-4 4.007 4.007 0 0 1-4 4z" class="cls-1" data-name="Path 32" transform="translate(-.003)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="c-ui-btn c-ui-btn--edit-layout" data-toolclass="edit-layout" >
+                    <div class="c-ui-btn__inner">
+                        <svg class='svg' id="paper" version="1.1" viewBox="0 0 96 96" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M76,0H20C13.37,0,8,5.37,8,12v72c0,6.63,5.37,12,12,12h56c6.63,0,12-5.37,12-12V12C88,5.37,82.63,0,76,0z M80,84  c0,2.21-1.79,4-4,4H20c-2.21,0-4-1.79-4-4V12c0-2.21,1.79-4,4-4h56c2.21,0,4,1.79,4,4V84z"/><path d="M68,72c0,2.209-1.791,4-4,4H32c-2.209,0-4-1.791-4-4l0,0c0-2.209,1.791-4,4-4h32C66.209,68,68,69.791,68,72L68,72z"/><path d="M68,56c0,2.209-1.791,4-4,4H32c-2.209,0-4-1.791-4-4l0,0c0-2.209,1.791-4,4-4h32C66.209,52,68,53.791,68,56L68,56z"/><path d="M68,40c0,2.209-1.791,4-4,4H32c-2.209,0-4-1.791-4-4l0,0c0-2.209,1.791-4,4-4h32C66.209,36,68,37.791,68,40L68,40z"/><path d="M52,24c0,2.209-1.791,4-4,4H32c-2.209,0-4-1.791-4-4l0,0c0-2.209,1.791-4,4-4h16C50.209,20,52,21.791,52,24L52,24z"/></svg>
+                    </div>
+                </div>
+                <div class="c-ui-btn c-ui-btn--edit-background" data-toolclass="edit-bcg" >
+                    <div class="c-ui-btn__inner">
+                        <svg class='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path id="upload-media" d="M21.75 6H21v-.75A2.25 2.25 0 0 0 18.75 3H18v-.75A2.25 2.25 0 0 0 15.75 0H2.25A2.25 2.25 0 0 0 0 2.25v13.5A2.25 2.25 0 0 0 2.25 18H3v.75A2.25 2.25 0 0 0 5.25 21H6v.75A2.25 2.25 0 0 0 8.25 24h13.5A2.25 2.25 0 0 0 24 21.75V8.25A2.25 2.25 0 0 0 21.75 6zM1.5 12.443V2.25a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75v7.193l-1.718-1.718a.75.75 0 0 0-1.057 0L10.5 10.943 7.283 7.717a.75.75 0 0 0-1.058 0zM5.25 19.5a.75.75 0 0 1-.75-.75V18h11.25A2.25 2.25 0 0 0 18 15.75V4.5h.75a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75zm17.25 2.25a.75.75 0 0 1-.75.75H8.25a.75.75 0 0 1-.75-.75V21h11.25A2.25 2.25 0 0 0 21 18.75V7.5h.75a.75.75 0 0 1 .75.75z" class="cls-1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="c-ui-btn c-ui-btn--edit-text" data-toolclass="edit-text">
+                    <div class="c-ui-btn__inner">
+                        <svg class='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16.172">
+                            <g id="edit-text" transform="translate(-347 -287)">
+                                <path id="Subtraction_3" d="M2.026 11.632L0 11.63V8.4l.126.4L2.872 0H6.4l3.7 11.631H7.193l-.917-3.165h-3.4l-.846 3.165zm2.487-9.846l-.267 1.145-.28 1.155-.705 2.469h2.627l-.74-2.5-.313-1.134-.287-1.135z" class="cls-1" data-name="Subtraction 3" transform="translate(360.897 291.54)"/>
+                                <path id="Subtraction_2" d="M13.9 16.17h-2.984l-1.264-4.354H4.971l-1.164 4.351H0L4.971 0h4.85L13.9 12.943v3.226zM7.227 2.628L6.86 4.2l-.385 1.592L5.5 9.186h3.618L8.1 5.751l-.431-1.562-.394-1.561z" class="cls-1" data-name="Subtraction 2" transform="translate(347 287)"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="c-ui-btn c-ui-btn--edit-animation" data-toolclass="edit-animation">
+                    <div class="c-ui-btn__inner">
+                        <svg class='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.701 22.605">
+                            <defs>
+
+                            </defs>
+                            <g id="animation" transform="translate(0 -10.99)">
+                                <path id="Path_26" d="M23.7 19.75q0-.527-.8-.655l-7.15-1.04-3.2-6.481q-.27-.584-.7-.584t-.7.584l-3.2 6.481L.8 19.094q-.8.128-.8.655a1.085 1.085 0 0 0 .356.684l5.185 5.042L4.316 32.6a2.313 2.313 0 0 0-.028.285.84.84 0 0 0 .149.506.517.517 0 0 0 .449.207 1.208 1.208 0 0 0 .57-.171l6.4-3.362 6.4 3.362a1.153 1.153 0 0 0 .57.171.5.5 0 0 0 .435-.207.841.841 0 0 0 .149-.506 2.152 2.152 0 0 0-.014-.285l-1.236-7.124 5.17-5.042a1.029 1.029 0 0 0 .37-.684z" class="cls-1" data-name="Path 26"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="c-ui-btn c-ui-btn--edit-bookend" data-toolclass="edit-bookend">
+                    <div class="c-ui-btn__inner">
+                        <svg class='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28.369">
+                            <defs>
+
+                            </defs>
+                            <g id="bookend" transform="translate(-33.261)">
+                                <path id="Path_54" d="M56.9.938a2.114 2.114 0 0 0-.984-.769 2.076 2.076 0 0 0-.83-.169h-19.65a2.075 2.075 0 0 0-.825.169 2.112 2.112 0 0 0-.984.769 1.989 1.989 0 0 0-.366 1.162v24.169a1.991 1.991 0 0 0 .366 1.163 2.112 2.112 0 0 0 .984.769 2.074 2.074 0 0 0 .825.169 2.236 2.236 0 0 0 1.556-.619l8.269-7.95 8.269 7.949a2.232 2.232 0 0 0 1.556.6 2.181 2.181 0 0 0 1.81-.919 1.988 1.988 0 0 0 .365-1.162V2.1A1.991 1.991 0 0 0 56.9.938z" class="cls-1" data-name="Path 54"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="b-ui__tools">
+                <div class="b-ui__tool b-ui__tool__edit-general active">
+                    <h3 class='b-ui__tool b-ui__tool__edit-general__title'>General Settings</h3>
+                    <div class="b-ui__tool b-ui__tool__edit-general__inner">
+                      <!-- JS GENERATED -->
+                    </div>
+                </div>
+                <div class="b-ui__tool b-ui__tool__edit-layout">
+                    <h3 class='b-ui__tool b-ui__tool__edit-layout__title'>Edit Layout</h3>
+                    <div class="b-ui__tool b-ui__tool__edit-layout__inner">
+                        <div class="b-ui__tool b-ui__tool__edit-layout__switches">
+                            <label class="c-switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                              <span class='c-switch__title'>Vertical</span>
+                            </label>
+                            <label class="c-switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                              <span class='c-switch__title'>Horizontal</span>
+                            </label>
+                            <label class="c-switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                              <span class='c-switch__title'>Thirds</span>
+                            </label>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-layout__add-remove">
+                            <div class='item'>
+                                <span class='btn'>+</span>
+                                <span class='label'>Add AMP Story Page</span>
+                            </div>
+                            <div class='item'>
+                                <span class='btn'>-</span>
+                                <span class='label'>Delete Amp Story Page</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-ui__tool b-ui__tool__edit-bcg">
+                  <h3 class='b-ui__tool b-ui__tool__edit-bcg__title'>Edit Background</h3>
+                    <div class="b-ui__tool__edit-bcg__add-img">
+                        <div class="b-ui__tool__edit-bcg__add-img__inner">
+                            <p>
+                                <span class='icon'>
+                                    <svg height="10px" id="Layer_1" version="1.1" viewBox="0 0 128 128" width="10px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M41.789,113.963c-6.363,0-12.727-2.422-17.57-7.266c-9.688-9.689-9.688-25.453,0.001-35.14l52.091-52.089  c3.407-3.408,7.934-5.284,12.746-5.284s9.34,1.876,12.747,5.284l0.082,0.085c3.361,3.359,5.238,7.886,5.238,12.699  c0,4.813-1.877,9.34-5.285,12.747L53.8,93.036l-0.646,0.579c-3.891,3.84-10.179,3.824-14.048-0.042l-0.077-0.077  c-1.879-1.879-2.916-4.381-2.916-7.042c0-2.659,1.038-5.161,2.921-7.044l24.965-24.964c0.781-0.781,2.047-0.781,2.828,0  c0.781,0.781,0.781,2.047,0,2.828L41.862,82.238c-1.128,1.129-1.749,2.625-1.749,4.217c0,1.591,0.621,3.088,1.749,4.217l0.077,0.078  c2.319,2.318,6.103,2.316,8.428-0.006l48.644-48.573c2.652-2.652,4.113-6.175,4.113-9.919s-1.461-7.267-4.113-9.918l-0.082-0.086  c-2.605-2.604-6.128-4.064-9.872-4.064s-7.267,1.46-9.918,4.112L27.048,74.386c-8.129,8.128-8.129,21.354-0.001,29.483  c8.127,8.126,21.354,8.129,29.484,0l52.088-52.091c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828l-52.088,52.091  C54.515,111.541,48.151,113.963,41.789,113.963z"/></svg>
+                                </span>
+                                <span class='link'>Add File</span>
+                                or drop files here
+                            </p>
+                        </div>
+                    </div>
+                    <div class="b-ui__tool__edit-bcg__images-list">
+                        <div class="search-img">
+                            <svg height="10px" id="Icons" version="1.1" viewBox="0 0 80 80" width="10px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M59.446,55.911L49.337,45.802c1.922-2.64,3.069-5.88,3.069-9.396c0-8.837-7.163-16-16-16s-16,7.163-16,16s7.163,16,16,16  c3.516,0,6.756-1.147,9.396-3.069l10.109,10.109L59.446,55.911z M36.406,47.406c-6.065,0-11-4.935-11-11s4.935-11,11-11  s11,4.935,11,11S42.471,47.406,36.406,47.406z"/></svg>
+                            <input type="search" name="" placeholder="Search">
+                        </div>
+                        <div class="b-ui__tool__edit-bcg__item" data-src="img/img01.jpg">
+                            <img src="img/img01-thumb.jpg" alt="">
+                            <p>Image01.jpg</p>
+                        </div>
+                        <div class="b-ui__tool__edit-bcg__item" data-src="img/img02.jpg">
+                            <img src="img/img02-thumb.jpg" alt="">
+                            <p>Image02.jpg</p>
+                        </div>
+                        <div class="b-ui__tool__edit-bcg__item" data-src="img/img03.jpg">
+                            <img src="img/img03-thumb.jpg" alt="">
+                            <p>Image03.jpg</p>
+                        </div>
+                        <div class="b-ui__tool__edit-bcg__item" data-src="img/img04.jpg">
+                            <img src="img/img04-thumb.jpg" alt="">
+                            <p>Image04.jpg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-ui__tool b-ui__tool__edit-text">
+                    <h3 class='b-ui__tool__edit-text__title'>Edit Text</h3>
+                    <div class="b-ui__tool b-ui__tool__edit-text__inner">
+                        <!-- JS GENERATED -->
+                    </div>
+                </div>
+                <div class="b-ui__tool b-ui__tool__edit-animation">
+                    <h3 class='b-ui__tool__edit-animation__title'>Animation Picker</h3>
+                    <div class="b-ui__tool b-ui__tool__edit-animation__inner">
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Drop</span>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Fade In</span>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item selected">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Fade Out</span>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Fly In</span>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Fly Out</span>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Zoom In</span>
+                        </div>
+                        <div class="b-ui__tool b-ui__tool__edit-animation__item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Group" viewBox="0 0 13.634 13.635">
+                                    <path id="Path_31" d="M13.518.139a.452.452 0 0 0-.549-.08l-5.014 2.82L8.4.636a.455.455 0 0 0-.763-.411l-6.4 6.4a.256.256 0 0 0-.033.03 4.093 4.093 0 0 0 5.787 5.788l.033-.036 5.432-5.431a.455.455 0 0 0 .088-.518.46.46 0 0 0-.46-.255l-1.974.217L13.58.69a.453.453 0 0 0-.062-.551zM4.1 12.271a2.727 2.727 0 1 1 2.729-2.727A2.727 2.727 0 0 1 4.1 12.271z" class="cls-1" data-name="Path 31" transform="translate(-.012)"/>
+                                </svg>
+                            </div>
+                            <span class='label'>Zoom Out</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-ui__tool b-ui__tool__edit-bookend">
+                  <h3 class='b-ui__tool b-ui__tool__edit-bookend__title'>Edit Bookend</h3>
+                    <div class="b-ui__tool__edit-bookend__switches">
+                        <label class="c-switch">
+                          <input type="checkbox" checked>
+                          <span class="slider round"></span>
+                          <span class='c-switch__title'>Fb</span>
+                        </label>
+                        <label class="c-switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          <span class='c-switch__title'>Instagram</span>
+                        </label>
+                        <label class="c-switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          <span class='c-switch__title'>Twitter</span>
+                        </label>
+                    </div>
+                    <div class="b-ui__tool__edit-bookend__images-list">
+                        <h3 class='b-ui__tool b-ui__tool__edit-bookend__title-articles'>Related Articles</h3>
+                        <div class="search-img">
+                            <svg height="10px" id="Icons" version="1.1" viewBox="0 0 80 80" width="10px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M59.446,55.911L49.337,45.802c1.922-2.64,3.069-5.88,3.069-9.396c0-8.837-7.163-16-16-16s-16,7.163-16,16s7.163,16,16,16  c3.516,0,6.756-1.147,9.396-3.069l10.109,10.109L59.446,55.911z M36.406,47.406c-6.065,0-11-4.935-11-11s4.935-11,11-11  s11,4.935,11,11S42.471,47.406,36.406,47.406z"/></svg>
+                            <input type="search" name="" placeholder="Search">
+                        </div>
+                        <div class="b-ui__tool__edit-bookend__item" data-src="img/img01.jpg">
+                            <img src="img/img01-thumb.jpg" alt="">
+                            <p>www.purepeople.com/articles/</p>
+                        </div>
+                        <div class="b-ui__tool__edit-bookend__item" data-src="img/img02.jpg">
+                            <img src="img/img02-thumb.jpg" alt="">
+                            <p>www.purepeople.com/articles/</p>
+                        </div>
+                        <div class="b-ui__tool__edit-bookend__item" data-src="img/img03.jpg">
+                            <img src="img/img03-thumb.jpg" alt="">
+                            <p>www.purepeople.com/articles/</p>
+                        </div>
+                        <div class="b-ui__tool__edit-bookend__item" data-src="img/img04.jpg">
+                            <img src="img/img04-thumb.jpg" alt="">
+                            <p>Iwww.purepeople.com/articles/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-ui__main">
+            <div class="b-ui__main__inner">
+                <div class="c-canvas c-canvas--left c-canvas--side visible"></div>
+                <div class="c-canvas c-canvas--center visible">
+                    <!-- JS GENERATED -->
+                </div>
+                <div class="c-canvas c-canvas--right c-canvas--side visible"></div>
+            </div>
+            <div class="b-slider">
+                <div class="b-slider__wrapper">
+                    <div class="b-slider__controls">
+                        <div class="control left"><</div>
+                        <div class="control right">></div>
+                    </div>
+                    <div class="b-slider__dots">
+
+                    </div>
+                    <div class="b-slider__current-num">
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+<script type="text/javascript" src='js/main.js'></script>
+</body>
+</html>

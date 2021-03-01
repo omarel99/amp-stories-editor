@@ -1,0 +1,26 @@
+//----- Mixin / Font Size
+
+// Example @include font-size(10px, 20px, 30px);
+// rem Font Size
+@mixin font-size($fz-phone, $fz-desktop) {
+    @include breakpoint(phone) {
+        font-size: cr($fz-phone);
+    }
+    @include breakpoint(overPhone){
+        font-size: cr($fz-desktop);
+    }
+}
+
+// vw Font Size for HTML
+@mixin font-size-vw($fz-phone, $fz-desktop) {
+    font-size: #{$font-size-base}px;
+    @include breakpoint(phone) {
+        font-size: cvw($fz-phone, $site-mob-design);
+    }
+    @include breakpoint(overPhone) {
+        font-size: cvw($fz-desktop, $site-desk-design);
+    }
+    @include breakpoint(overDesign) {
+        font-size: #{$font-size-base}px;
+    }
+}

@@ -1,0 +1,75 @@
+.c-canvas{
+    position:relative;
+    background:#b7b7b7;
+    width: 36rem;
+    height: 64rem;
+    box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 18px;
+    opacity:0;
+    transition: all 0.4s ease;
+
+    &.visible{
+        opacity: 1;
+    }
+
+    &--side{
+        width: 32.4rem;
+        height: 57.6rem;
+        background: transparent;
+        position: absolute;
+        z-index: 3;
+        &.visible{
+            opacity: 0.5;
+        }
+    }
+    &--left{
+        left: 2rem;
+    }
+    &--center{
+        margin: auto;
+        z-index: 5;
+    }
+    &--right{
+        right: 2rem;
+    }
+
+    .dragableText{
+
+    }
+
+    .selected{
+      &::before{
+        content:"";
+        border: 1px dashed gold;
+        //background: rgba(0,0,0,0.2);
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+      }
+    }
+
+    &__title{
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+        color: white;
+
+        h1{
+            @include font-size(20,32);
+        }
+    }
+
+    &__description{
+        position: absolute;
+        bottom: 5rem;
+        left: 3rem;
+        color: white;
+
+        p{
+            @include font-size(20,32);
+        }
+    }
+}

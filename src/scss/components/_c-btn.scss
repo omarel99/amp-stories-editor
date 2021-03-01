@@ -1,0 +1,65 @@
+.c-btn{
+    padding: 1.2rem 3rem;
+    border: 1px solid #3f4656;
+    border-radius: 5px;
+    background-color: #1f2534;
+    color: #f8f8f8;
+    @include font-size(13,13);
+    text-transform: uppercase;
+    font-family: $ff-main-medium;
+    outline: none;
+    margin-right: .6rem;
+
+    &:hover{
+        @include breakpoint(desktop){
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+
+    &--tab{
+        align-self: flex-end;
+        background-color: #1b212f;
+        border: none;
+        padding: 1.6rem 3.2rem;
+        border-radius: 0;
+        position: relative;
+        &.selected {
+            top:1px;
+            z-index: 1;
+            &:after {
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: -1.4rem;
+                z-index: -1;
+                background: #1b212f;
+                transform-origin: bottom left;
+                -ms-transform: skew(20deg, 0deg);
+                -webkit-transform: skew(20deg, 0deg);
+                transform: skew(20deg, 0deg);
+            }
+            &:hover{
+                @include breakpoint(desktop){
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &--disabled{
+        pointer-events: none;
+        color: #2f3545;
+        background-color: #151a26;
+        &:hover{
+            @include breakpoint(desktop){
+                cursor: not-allowed;
+            }
+        }
+
+    }
+}

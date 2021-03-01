@@ -1,0 +1,70 @@
+.b-slider{
+    min-width: 14.2rem;
+    position: relative;
+    color: white;
+    margin-top: 7rem;
+
+    &__wrapper{
+
+    }
+
+    &__controls{
+        position: absolute;
+        width:100%;
+        @include font-size(20,32);
+        top: -1.5rem;
+        font-family: $ff-main-medium;
+
+        .control{
+            &:hover{
+                @include breakpoint(desktop){
+                    cursor: pointer;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        & .left{
+            position: absolute;
+            left: 0;
+
+        }
+
+        & .right{
+            position: absolute;
+            right: 0;
+
+        }
+    }
+
+    &__dots{
+        padding: 0 1rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4rem;
+        margin-bottom: 1rem;
+
+
+        & .dot{
+            width: 1.6rem;
+            height: 0.2rem;
+            background-color: #2f3545;
+            display: inline-block;
+            margin: 0 0.4rem;
+
+            &.current{
+                background: #f8f8f8;
+                height: 0.3rem;
+            }
+        }
+    }
+
+    &__current-num{
+        text-align: center;
+        & span{
+            @include font-size(11,11);
+        }
+    }
+}
